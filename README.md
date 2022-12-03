@@ -36,6 +36,8 @@ After you're finished please remove all the comments and instructions!
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+
+- [Key Features](#key-features)
   
 - [👥 Author](#author)
 
@@ -47,6 +49,17 @@ After you're finished please remove all the comments and instructions!
 <!-- > Describe your project in 1 or 2 sentences. -->
 
 **[Portfolio]** is a personal portfolio site.
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+
+- **[about section ]**
+- **[work section]**
+- **[conract us ]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
