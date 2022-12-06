@@ -199,7 +199,7 @@ work section
   -o-border-radius: 4px;
 }
 
-.card button {
+.card button,.btn-general {
   width: 122px;
   height: 48px;
   border-radius: 4px;
@@ -353,18 +353,23 @@ contact me section
   display: flex;
   flex-direction: column;
 }
-.fullname,
-.email {
+
+/* add styling to form elements -ram */
+.form-element {
   height: 48px;
   border: 2px solid #d0d9d4;
   color: #6b778c;
   border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
   margin-bottom: 24px;
   font-size: 15px;
   line-height: 24px;
   text-align: left;
+  padding: 15px;
+}
+.msg-text {
+  height: 30%;
+}
+
+.form-button {
+  margin: 0 auto;
 }
