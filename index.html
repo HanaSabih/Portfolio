@@ -185,7 +185,7 @@
     </section>
     <!-- contactme -->
     <section class="contactme">
-      <form action="/login" method="post">
+      <form action="https://formspree.io/f/maykropo" method="post">
         <h2>
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
@@ -196,6 +196,8 @@
           type="text"
           name="name"
           placeholder="Full name"
+          maxlength="30"
+          required
         />
         <input
           class="email"
@@ -203,14 +205,28 @@
           id="email"
           type="email"
           placeholder="Email address"
+          required
         />
         <textarea
           id="msg"
           name="user_message"
           placeholder="Enter text here"
+          maxlength="500"
+          rows="5"
+          required
         ></textarea>
         <button type="submit">Get in touch</button>
       </form>
     </section>
+    <footer>
+      <div class="icons-contact">
+        <img src="./images/icons/twitter.png" alt="twitter" />
+        <img src="./images/icons/Linkedin.png" alt="Linkedin" />
+        <img src="./images/icons/medium.png" alt="medium" />
+        <img src="./images/icons/github.png" alt="github" />
+        <img src="./images/icons/angellist.png" alt="angellist" />
+      </div>
+      <p class="postal-email-id">hanasabih@gmail.com </p>
+    </footer>
   </body>
 </html>
