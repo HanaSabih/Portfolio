@@ -333,3 +333,38 @@ about me section
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
+/* =====================
+contact me section
+===================== */
+.contactme {
+  text-align: center;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.contactme h2 {
+  margin-top: 60px;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #172b4d;
+  margin-bottom: 58px;
+}
+.contactme form {
+  display: flex;
+  flex-direction: column;
+}
+.fullname,
+.email {
+  height: 48px;
+  border: 2px solid #d0d9d4;
+  color: #6b778c;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+}
