@@ -199,7 +199,8 @@ work section
   -o-border-radius: 4px;
 }
 
-.card button,.btn-general {
+.card button,
+.btn-general {
   width: 122px;
   height: 48px;
   border-radius: 4px;
@@ -215,6 +216,27 @@ work section
   margin-bottom: 24px;
   margin-top: 29px;
   border: 2px solid #36b37f;
+}
+
+.about_desc button {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  background-color: #36b37f;
+  color: white;
+  border: 2px solid #36b37f;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 3;
+  width: 159px;
+  height: 48px;
+}
+
+.card button:hover,
+.btn-general:hover {
+  background-color: rgba(54, 179, 127, 0.24);
 }
 
 /* =====================
@@ -245,20 +267,8 @@ about me section
   margin-bottom: 24px;
 }
 
-.about_desc button {
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  background-color: #36b37f;
-  color: white;
-  border: 2px solid #36b37f;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 3;
-  width: 159px;
-  height: 48px;
+.about_desc button:hover {
+  background-color: rgba(54, 179, 127, 0.24);
 }
 
 .card_about {
@@ -333,6 +343,7 @@ about me section
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
+
 /* =====================
 contact me section
 ===================== */
@@ -341,6 +352,7 @@ contact me section
   margin-left: 24px;
   margin-right: 24px;
 }
+
 .contactme h2 {
   margin-top: 60px;
   font-size: 40px;
@@ -349,6 +361,7 @@ contact me section
   color: #172b4d;
   margin-bottom: 58px;
 }
+
 .contactme form {
   display: flex;
   flex-direction: column;
@@ -366,6 +379,7 @@ contact me section
   text-align: left;
   padding: 15px;
 }
+
 .msg-text {
   height: 30%;
 }
@@ -383,6 +397,16 @@ contact me section
 }
 
 .postal-email-id {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 2.5rem;
+  margin-bottom: 189px;
+}
+
+.social-footer hr {
+  margin-top: 134px;
+  margin-bottom: 20px;
+  border-top: 4px solid black;
+  width: 30%;
+  display: inline-flex;
+  align-items: center;
 }
