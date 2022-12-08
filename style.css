@@ -239,6 +239,7 @@ work section
 .card button:hover,
 .btn-general:hover {
   background-color: rgba(54, 179, 127, 0.24);
+  color: #3a4a42;
 }
 
 /* =====================
@@ -246,12 +247,16 @@ about me section
 ===================== */
 .aboutme {
   text-align: center;
-  margin-left: 12px;
-  margin-right: 12px;
+  background: url(./images/maboutme1.png), url(./images/maboutme2.png);
+  background-position: left 23%, right top;
+
+  /* background-size: 288px 130px, 119px 108px; */
+  background-repeat: no-repeat;
 }
 
 .about_desc {
-  margin: 68px 12px 59px 12px;
+  /* margin: 68px 12px 59px 12px; */
+  margin-bottom: 59px;
 }
 
 .about_desc h2 {
@@ -259,14 +264,15 @@ about me section
   font-weight: 700;
   line-height: 52px;
   color: #172b4d;
+  padding-top: 64px;
 }
 
 .about_desc p {
   font-size: 20px;
   line-height: 32px;
   color: #42526e;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  font-weight: 400;
+  margin: 24px 50px;
 }
 
 .about_desc button:hover {
@@ -421,7 +427,7 @@ contact me section
   display: none;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1500px) {
   .bigheader {
     background-image: url(./images/big-hero.png);
     height: 950px;
@@ -491,7 +497,6 @@ contact me section
   }
 
   .works {
-    margin-bottom: 140px;
     margin-top: 102px;
   }
 
@@ -511,8 +516,18 @@ contact me section
     margin: 52px 260px;
   }
 
+  .aboutme {
+    background: url(./images/aboutme1.png), url(./images/aboutme2.png);
+    background-position: left 35%, right top;
+    background-size: 288px 130px, 223px 245px;
+    background-repeat: no-repeat;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .about_desc h2 {
     margin-bottom: 0;
+    padding-top: 140px;
   }
 
   .about_desc p {
@@ -538,19 +553,24 @@ contact me section
   }
 
   .contactme {
-    margin: 64px 135px 0 135px;
-    display: grid;
-    grid-template-columns: auto auto;
+    margin: 164px 0 0 0;
+    justify-content: center;
+    display: flex;
+    background:
+      url(./images/contact1.png),
+      url(./images/contact2.png),
+      url(./images/contact3.png);
+    background-position: left bottom, 20% 80%, right bottom;
+    background-repeat: no-repeat;
   }
 
   .contact-form {
-    margin-top: 80px;
     width: 684px;
   }
 
   .contactme h2 {
     width: 463px;
-    margin-top: 80px;
+    font-size: 30px;
   }
 
   .firstlastname {
