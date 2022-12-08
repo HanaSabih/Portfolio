@@ -49,7 +49,6 @@ header img {
 h1 {
   font-size: 40px;
   line-height: 52px;
-  font-style: bold;
   margin-top: 64px;
   color: #172b4d;
   font-weight: 700;
@@ -77,11 +76,14 @@ h1 span {
   padding-right: 20px;
 }
 
+.topnav {
+  display: none;
+}
+
 /* =====================
 work section
 ===================== */
 .works {
-  margin-top: 62px;
   text-align: center;
   margin-right: 22px;
   margin-left: 26px;
@@ -90,7 +92,6 @@ work section
 .down {
   height: 40px;
   width: 40px;
-  margin-bottom: 22px;
   border-radius: 32px;
   -webkit-border-radius: 32px;
   -moz-border-radius: 32px;
@@ -102,6 +103,7 @@ work section
   background-repeat: no-repeat;
   position: relative;
   border: 2px solid #dfe1e6;
+  margin: 62px auto 22px auto;
 }
 
 .works h2 {
@@ -409,4 +411,190 @@ contact me section
   width: 30%;
   display: inline-flex;
   align-items: center;
+}
+
+.firstlastname {
+  display: none;
+}
+
+.dividerfoo {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .bigheader {
+    background-image: url(./images/big-hero.png);
+    height: 950px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  header {
+    background: transparent;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  header h5,
+  header img {
+    display: none;
+  }
+
+  .topnav {
+    display: inline-block;
+  }
+
+  .topnav a {
+    text-decoration: none;
+    color: #344563;
+    font-size: 15px;
+    line-height: 20px;
+    padding-right: 32px;
+  }
+
+  .headline {
+    margin: 0;
+    padding: 0;
+    background-image: none;
+    display: block;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 60px;
+    margin-top: 160px;
+    font-weight: 800;
+    margin-bottom: 24px;
+  }
+
+  .headline p {
+    line-height: 32px;
+    width: 920px;
+    padding: 0 80px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .icons-contact {
+    margin-bottom: 74px;
+    height: 40px;
+  }
+
+  .icons-contact img {
+    padding-right: 20px;
+  }
+
+  .down {
+    margin-right: 40px;
+  }
+
+  .works {
+    margin-bottom: 140px;
+    margin-top: 102px;
+  }
+
+  .works hr {
+    display: none;
+  }
+
+  .work_cards {
+    grid-template-columns: auto auto auto;
+  }
+
+  .card {
+    width: 369px;
+  }
+
+  .about_desc {
+    margin: 52px 260px;
+  }
+
+  .about_desc h2 {
+    margin-bottom: 0;
+  }
+
+  .about_desc p {
+    padding: 24px 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .about_desc button {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 135px;
+  }
+
+  .card_about {
+    grid-template-columns: auto auto auto;
+    margin-top: 0;
+    gap: 24px;
+  }
+
+  .cardabt {
+    width: 369px;
+  }
+
+  .contactme {
+    margin: 64px 135px 0 135px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .contact-form {
+    margin-top: 80px;
+    width: 684px;
+  }
+
+  .contactme h2 {
+    width: 463px;
+    margin-top: 80px;
+  }
+
+  .firstlastname {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 24px;
+  }
+
+  #name {
+    display: none;
+  }
+
+  .msg-text {
+    height: 114px;
+  }
+
+  .form-button {
+    margin-top: 24px;
+    margin-left: 0;
+    margin-bottom: 225px;
+  }
+
+  .dividerfoot {
+    border-top: 1px solid #dfe1e6;
+  }
+
+  .social-footer {
+    margin-top: 0;
+  }
+
+  .social-footer .icons-contact {
+    margin-top: 15px;
+    margin-bottom: 16px;
+  }
+
+  .postal-email-id {
+    display: none;
+  }
+
+  .social-footer hr {
+    display: none;
+  }
+
+  .tagsabout {
+    margin: 0 16px;
+  }
 }

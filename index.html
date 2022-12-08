@@ -10,35 +10,43 @@
   </head>
 
   <body>
-    <header>
-      <a href="">
-        <h5>Welcome</h5>
-      </a>
-      <nav><img src="./images/icons/Union.png" alt="Union" /></nav>
-    </header>
-    <section class="headline">
-      <h1>
-        Hey there. I'm Mariane<br />
-        <span>I'm a software developer</span>
-      </h1>
-      <!-- <h3>Software Developer</h3> -->
+    <div class="bigheader">
+      <header>
+        <a href="">
+          <h5>Welcome</h5>
+        </a>
+        <nav>
+          <img src="./images/icons/Union.png" alt="Union" />
+          <div class="topnav" id="myTopnav">
+            <a href="#porfolio" class="active">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+      </header>
+      <section class="headline">
+        <h1>
+          Hey there. I'm Hana<br />
+          <span>I'm a software developer</span>
+        </h1>
+        <!-- <h3>Software Developer</h3> -->
 
-      <p>
-        I can help you build a product , feature or website Look through some of
-        my work and experience! If you like what you see and have a project you
-        need coded, don't hestiate to contact me.
-      </p>
-      <div class="icons-contact">
-        <img src="./images/icons/twitter.png" alt="twitter" />
-        <img src="./images/icons/Linkedin.png" alt="Linkedin" />
-        <img src="./images/icons/medium.png" alt="medium" />
-        <img src="./images/icons/github.png" alt="github" />
-        <img src="./images/icons/angellist.png" alt="angellist" />
-      </div>
-    </section>
+        <p>
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don't hestiate to contact me.
+        </p>
+        <div class="icons-contact">
+          <img src="./images/icons/twitter.png" alt="twitter" />
+          <img src="./images/icons/Linkedin.png" alt="Linkedin" />
+          <img src="./images/icons/medium.png" alt="medium" />
+          <img src="./images/icons/github.png" alt="github" />
+          <img src="./images/icons/angellist.png" alt="angellist" />
+        </div>
+        <button class="down"></button>
+      </section>
+    </div>
     <section class="works">
-      <button class="down"></button>
-
       <h2>My Recent Works</h2>
       <hr />
 
@@ -156,7 +164,7 @@
         </div>
         <div class="cardabt">
           <div class="imageabout">
-            <img src="images/icons/about3.png" alt="" />
+            <img src="images/icons/about1.png" alt="" />
           </div>
           <h3>Frameworks</h3>
           <div class="tagsabout">
@@ -171,7 +179,7 @@
         </div>
         <div class="cardabt">
           <div class="imageabout">
-            <img src="images/icons/about3.png" alt="" />
+            <img src="images/icons/about2.png" alt="" />
           </div>
           <h3>Skills</h3>
           <div class="tagsabout">
@@ -188,15 +196,35 @@
     </section>
     <!-- contactme -hana & henry-->
     <section class="contactme">
+      <h2>
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </h2>
       <form
         action="https://formspree.io/f/maykropo"
         method="post"
         class="contact-form"
       >
-        <h2>
-          I'm always interested in hearing about new projects, so if you'd like
-          to chat please get in touch.
-        </h2>
+        <div class="firstlastname">
+          <input
+            class="form-element"
+            id="firstname"
+            type="text"
+            name="name"
+            placeholder="First Name"
+            maxlength="30"
+            required
+          />
+          <input
+            class="form-element"
+            id="secondname"
+            type="text"
+            name="name"
+            placeholder="Last Name"
+            maxlength="30"
+            required
+          />
+        </div>
         <input
           class="form-element"
           id="name"
@@ -228,6 +256,7 @@
         </button>
       </form>
     </section>
+    <hr class="dividerfoot" />
     <footer class="social-footer">
       <div class="icons-contact">
         <img src="./images/icons/twitter.png" alt="twitter" />
