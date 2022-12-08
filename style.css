@@ -419,10 +419,6 @@ contact me section
   align-items: center;
 }
 
-.firstlastname {
-  display: none;
-}
-
 .dividerfoo {
   display: none;
 }
@@ -573,16 +569,6 @@ contact me section
     font-size: 30px;
   }
 
-  .firstlastname {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 24px;
-  }
-
-  #name {
-    display: none;
-  }
-
   .msg-text {
     height: 114px;
   }
@@ -616,5 +602,9 @@ contact me section
 
   .tagsabout {
     margin: 0 16px;
+  }
+
+  .btn-general {
+    width: 159px;
   }
 }
