@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: black;
 }
 
@@ -37,7 +37,7 @@ header img {
 
 .headline {
   text-align: center;
-  background-image: url(./images/img1.png);
+  background-image: url("./images/img1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,17 +93,17 @@ work section
   height: 40px;
   width: 40px;
   border-radius: 32px;
-  -webkit-border-radius: 32px;
-  -moz-border-radius: 32px;
-  -ms-border-radius: 32px;
-  -o-border-radius: 32px;
+  border-radius: 32px;
+  border-radius: 32px;
+  border-radius: 32px;
+  border-radius: 32px;
   background-color: white;
   background-image: url(./images/icons/btndown.png);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   border: 2px solid #dfe1e6;
-  margin: 62px auto 22px auto;
+  margin: 62px auto 22px;
 }
 
 .works h2 {
@@ -135,10 +135,10 @@ work section
   width: 327px;
   height: 474px;
   border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  border-radius: 8px;
+  border-radius: 8px;
+  border-radius: 8px;
+  border-radius: 8px;
   border: 2px solid #d0d9d4;
   background-image: url(./images/workimg.png);
   background-position: center;
@@ -169,10 +169,10 @@ work section
 
 .card .card_container {
   border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  border-radius: 8px;
+  border-radius: 8px;
+  border-radius: 8px;
+  border-radius: 8px;
   background-color: white;
   position: absolute;
   bottom: 0;
@@ -195,10 +195,10 @@ work section
   padding: 8px 12px;
   background-color: #ebf0ee;
   border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  border-radius: 4px;
+  border-radius: 4px;
+  border-radius: 4px;
+  border-radius: 4px;
 }
 
 .card button,
@@ -206,10 +206,10 @@ work section
   width: 122px;
   height: 48px;
   border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  border-radius: 4px;
+  border-radius: 4px;
+  border-radius: 4px;
+  border-radius: 4px;
   background-color: #36b37f;
   font-size: 17px;
   line-height: 24px;
@@ -222,10 +222,10 @@ work section
 
 .about_desc button {
   border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  border-radius: 4px;
+  border-radius: 4px;
+  border-radius: 4px;
+  border-radius: 4px;
   background-color: #36b37f;
   color: white;
   border: 2px solid #36b37f;
@@ -238,7 +238,7 @@ work section
 
 .card button:hover,
 .btn-general:hover {
-  background-color: rgba(54, 179, 127, 0.24);
+  background-color: rgb(54 179 127 / 24%);
   color: #3a4a42;
 }
 
@@ -276,7 +276,7 @@ about me section
 }
 
 .about_desc button:hover {
-  background-color: rgba(54, 179, 127, 0.24);
+  background-color: rgb(54 179 127 / 24%);
 }
 
 .card_about {
@@ -296,10 +296,10 @@ about me section
   background-color: #e5e5e5;
   border: 2px solid #c1c7d0;
   border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  border-radius: 8px;
+  border-radius: 8px;
+  border-radius: 8px;
+  border-radius: 8px;
   margin-bottom: 8px;
 }
 
@@ -346,10 +346,10 @@ about me section
   background-color: #fff;
   letter-spacing: 3;
   border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  border-radius: 8px;
+  border-radius: 8px;
+  border-radius: 8px;
+  border-radius: 8px;
 }
 
 /* =====================
@@ -405,7 +405,7 @@ contact me section
 }
 
 .postal-email-id {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 2.5rem;
   margin-bottom: 189px;
 }
@@ -498,6 +498,12 @@ contact me section
     padding-right: 20px;
   }
 
+  .icons-contact img:hover {
+    transform: scale(2, 2);
+    transition: transform 1s;
+    cursor: pointer;
+  }
+
   .down {
     margin-right: 40px;
   }
@@ -559,7 +565,7 @@ contact me section
   }
 
   .contactme {
-    margin: 164px 0 0 0;
+    margin: 164px 0 0;
     justify-content: center;
     display: flex;
     background:
