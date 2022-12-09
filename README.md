@@ -1,4 +1,5 @@
 # Portfolio
+
 <a name="readme-top"></a>
 
 <!--
@@ -25,8 +26,6 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-  
-
   <h3><b>Hello-Microverse README Template</b></h3>
 
 </div>
@@ -38,9 +37,7 @@ After you're finished please remove all the comments and instructions!
 - [📖 About the Project](#about-project)
 
 - [Key Features](#key-features)
-  
 - [👥 Author](#author)
-
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -54,14 +51,13 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-
 - **[about section ]**
 - **[work section]**
 - **[conract us ]**
+- **[mobile and Desktop version ]**
+- **[Responsive web ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- AUTHORS -->
 
@@ -74,8 +70,6 @@ After you're finished please remove all the comments and instructions!
 - GitHub: [@githubhandle](https://github.com/HanaSabih)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/hana-sabih/)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
-

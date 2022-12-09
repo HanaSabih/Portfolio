@@ -49,7 +49,6 @@ header img {
 h1 {
   font-size: 40px;
   line-height: 52px;
-  font-style: bold;
   margin-top: 64px;
   color: #172b4d;
   font-weight: 700;
@@ -77,11 +76,14 @@ h1 span {
   padding-right: 20px;
 }
 
+.topnav {
+  display: none;
+}
+
 /* =====================
 work section
 ===================== */
 .works {
-  margin-top: 62px;
   text-align: center;
   margin-right: 22px;
   margin-left: 26px;
@@ -90,7 +92,6 @@ work section
 .down {
   height: 40px;
   width: 40px;
-  margin-bottom: 22px;
   border-radius: 32px;
   -webkit-border-radius: 32px;
   -moz-border-radius: 32px;
@@ -102,6 +103,7 @@ work section
   background-repeat: no-repeat;
   position: relative;
   border: 2px solid #dfe1e6;
+  margin: 62px auto 22px auto;
 }
 
 .works h2 {
@@ -199,7 +201,8 @@ work section
   -o-border-radius: 4px;
 }
 
-.card button {
+.card button,
+.btn-general {
   width: 122px;
   height: 48px;
   border-radius: 4px;
@@ -217,34 +220,6 @@ work section
   border: 2px solid #36b37f;
 }
 
-/* =====================
-about me section
-===================== */
-.aboutme {
-  text-align: center;
-  margin-left: 12px;
-  margin-right: 12px;
-}
-
-.about_desc {
-  margin: 68px 12px 59px 12px;
-}
-
-.about_desc h2 {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 52px;
-  color: #172b4d;
-}
-
-.about_desc p {
-  font-size: 20px;
-  line-height: 32px;
-  color: #42526e;
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-
 .about_desc button {
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -259,6 +234,49 @@ about me section
   letter-spacing: 3;
   width: 159px;
   height: 48px;
+}
+
+.card button:hover,
+.btn-general:hover {
+  background-color: rgba(54, 179, 127, 0.24);
+  color: #3a4a42;
+}
+
+/* =====================
+about me section
+===================== */
+.aboutme {
+  text-align: center;
+  background: url(./images/maboutme1.png), url(./images/maboutme2.png);
+  background-position: left 23%, right top;
+
+  /* background-size: 288px 130px, 119px 108px; */
+  background-repeat: no-repeat;
+}
+
+.about_desc {
+  /* margin: 68px 12px 59px 12px; */
+  margin-bottom: 59px;
+}
+
+.about_desc h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: #172b4d;
+  padding-top: 64px;
+}
+
+.about_desc p {
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  font-weight: 400;
+  margin: 24px 50px;
+}
+
+.about_desc button:hover {
+  background-color: rgba(54, 179, 127, 0.24);
 }
 
 .card_about {
@@ -332,4 +350,261 @@ about me section
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+}
+
+/* =====================
+contact me section
+===================== */
+.contactme {
+  text-align: center;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.contactme h2 {
+  margin-top: 60px;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #172b4d;
+  margin-bottom: 58px;
+}
+
+.contactme form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* add styling to form elements -ram */
+.form-element {
+  height: 48px;
+  border: 2px solid #d0d9d4;
+  color: #6b778c;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: left;
+  padding: 15px;
+}
+
+.msg-text {
+  height: 30%;
+}
+
+.form-button {
+  margin: 0 auto;
+}
+
+.social-footer {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  align-items: center;
+}
+
+.postal-email-id {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 189px;
+}
+
+.social-footer hr {
+  margin-top: 134px;
+  margin-bottom: 20px;
+  border-top: 4px solid black;
+  width: 30%;
+  display: inline-flex;
+  align-items: center;
+}
+
+.dividerfoo {
+  display: none;
+}
+
+@media screen and (min-width: 1500px) {
+  .bigheader {
+    background-image: url(./images/big-hero.png);
+    height: 950px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  header {
+    background: transparent;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  header h5,
+  header img {
+    display: none;
+  }
+
+  .topnav {
+    display: inline-block;
+  }
+
+  .topnav a {
+    text-decoration: none;
+    color: #344563;
+    font-size: 15px;
+    line-height: 20px;
+    padding-right: 32px;
+  }
+
+  .headline {
+    margin: 0;
+    padding: 0;
+    background-image: none;
+    display: block;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 60px;
+    margin-top: 160px;
+    font-weight: 800;
+    margin-bottom: 24px;
+  }
+
+  .headline p {
+    line-height: 32px;
+    width: 920px;
+    padding: 0 80px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .icons-contact {
+    margin-bottom: 74px;
+    height: 40px;
+  }
+
+  .icons-contact img {
+    padding-right: 20px;
+  }
+
+  .down {
+    margin-right: 40px;
+  }
+
+  .works {
+    margin-top: 102px;
+  }
+
+  .works hr {
+    display: none;
+  }
+
+  .work_cards {
+    grid-template-columns: auto auto auto;
+  }
+
+  .card {
+    width: 369px;
+  }
+
+  .about_desc {
+    margin: 52px 260px;
+  }
+
+  .aboutme {
+    background: url(./images/aboutme1.png), url(./images/aboutme2.png);
+    background-position: left 35%, right top;
+    background-size: 288px 130px, 223px 245px;
+    background-repeat: no-repeat;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about_desc h2 {
+    margin-bottom: 0;
+    padding-top: 140px;
+  }
+
+  .about_desc p {
+    padding: 24px 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .about_desc button {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 135px;
+  }
+
+  .card_about {
+    grid-template-columns: auto auto auto;
+    margin-top: 0;
+    gap: 24px;
+  }
+
+  .cardabt {
+    width: 369px;
+  }
+
+  .contactme {
+    margin: 164px 0 0 0;
+    justify-content: center;
+    display: flex;
+    background:
+      url(./images/contact1.png),
+      url(./images/contact2.png),
+      url(./images/contact3.png);
+    background-position: left bottom, 20% 80%, right bottom;
+    background-repeat: no-repeat;
+  }
+
+  .contact-form {
+    width: 684px;
+  }
+
+  .contactme h2 {
+    width: 463px;
+    font-size: 30px;
+  }
+
+  .msg-text {
+    height: 114px;
+  }
+
+  .form-button {
+    margin-top: 24px;
+    margin-left: 0;
+    margin-bottom: 225px;
+  }
+
+  .dividerfoot {
+    border-top: 1px solid #dfe1e6;
+  }
+
+  .social-footer {
+    margin-top: 0;
+  }
+
+  .social-footer .icons-contact {
+    margin-top: 15px;
+    margin-bottom: 16px;
+  }
+
+  .postal-email-id {
+    display: none;
+  }
+
+  .social-footer hr {
+    display: none;
+  }
+
+  .tagsabout {
+    margin: 0 16px;
+  }
+
+  .btn-general {
+    width: 159px;
+  }
 }
