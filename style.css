@@ -471,6 +471,16 @@ contact me section
     margin-bottom: 24px;
   }
 
+  .headline h1:hover {
+    color: #36b37e;
+    transition: color 3s;
+  }
+
+  .headline > h1 > span:hover {
+    color: #172b4d;
+    transition: color 3s;
+  }
+
   .headline p {
     line-height: 32px;
     width: 920px;
