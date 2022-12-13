@@ -18,14 +18,14 @@
         <nav>
           <img src="./images/icons/Union.png" alt="Union" />
           <div class="topnav" id="myTopnav">
-            <a href="#porfolio" class="active">Portfolio</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="#" class="active">Portfolio</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
           </div>
         </nav>
       </header>
-      <section class="headline">
-        <h1>
+      <section title="headline" class="headline">
+        <h1 id="headline">
           Hey there. I'm Hana<br />
           <span>I'm a software developer</span>
         </h1>
@@ -43,11 +43,12 @@
           <img src="./images/icons/github.png" alt="github" />
           <img src="./images/icons/angellist.png" alt="angellist" />
         </div>
-        <button class="down"></button>
+        <button class="down"><span class="disnone">down</span></button>
       </section>
     </div>
+
     <section class="works">
-      <h2>My Recent Works</h2>
+      <h1>My Recent Works</h1>
       <hr />
 
       <div class="work_cards">
@@ -205,6 +206,7 @@
         method="post"
         class="contact-form"
       >
+        <label for="name" class="disnone">Full name </label>
         <input
           class="form-element"
           id="name"
@@ -214,6 +216,7 @@
           maxlength="30"
           required
         />
+        <label for="email" class="disnone">Email address </label>
         <input
           class="form-element"
           name="email"
@@ -222,6 +225,7 @@
           placeholder="Email address"
           required
         />
+        <label for="msg" class="disnone">Enter text here</label>
         <textarea
           class="form-element msg-text"
           id="msg"

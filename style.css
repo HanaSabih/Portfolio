@@ -17,6 +17,9 @@ a {
   text-decoration: none;
 }
 
+.disnone {
+  display: none;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -55,7 +58,7 @@ h1 {
 }
 
 h1 span {
-  color: #36b37e;
+  color: #1c5e43;
 }
 
 .headline > p {
@@ -214,7 +217,7 @@ work section
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 3;
-  color: white;
+  color: #000;
   margin-bottom: 24px;
   margin-top: 29px;
   border: 2px solid #36b37f;
@@ -227,7 +230,7 @@ work section
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   background-color: #36b37f;
-  color: white;
+  color: #000;
   border: 2px solid #36b37f;
   font-size: 17px;
   line-height: 24px;
@@ -339,7 +342,7 @@ about me section
 }
 
 .cardabt span {
-  color: #36b37e;
+  color: #1b5a40;
   font-size: 12px;
   line-height: 16px;
   padding: 12px;
@@ -552,9 +555,7 @@ contact me section
     margin: 164px 0 0 0;
     justify-content: center;
     display: flex;
-    background:
-      url(./images/contact1.png),
-      url(./images/contact2.png),
+    background: url(./images/contact1.png), url(./images/contact2.png),
       url(./images/contact3.png);
     background-position: left bottom, 20% 80%, right bottom;
     background-repeat: no-repeat;
