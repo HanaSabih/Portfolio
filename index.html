@@ -12,20 +12,18 @@
   <body>
     <div class="bigheader">
       <header>
-        <a href="">
-          <h5>Welcome</h5>
-        </a>
+        <a href="" class="welcome"> Welcome </a>
         <nav>
           <img src="./images/icons/Union.png" alt="Union" />
           <div class="topnav" id="myTopnav">
-            <a href="#porfolio" class="active">Portfolio</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="#" class="active">Portfolio</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
           </div>
         </nav>
       </header>
-      <section class="headline">
-        <h1>
+      <section title="headline" class="headline">
+        <h1 id="headline">
           Hey there. I'm Hana<br />
           <span>I'm a software developer</span>
         </h1>
@@ -43,9 +41,10 @@
           <img src="./images/icons/github.png" alt="github" />
           <img src="./images/icons/angellist.png" alt="angellist" />
         </div>
-        <button class="down"></button>
+        <button class="down"><span class="disnone">down</span></button>
       </section>
     </div>
+
     <section class="works">
       <h2>My Recent Works</h2>
       <hr />
@@ -150,7 +149,7 @@
       <div class="card_about">
         <div class="cardabt">
           <div class="imageabout">
-            <img src="images/icons/about3.png" alt="" />
+            <img src="images/icons/about3.png" alt="Languages-icon" />
           </div>
           <h3>Languages</h3>
           <div class="tagsabout">
@@ -164,7 +163,7 @@
         </div>
         <div class="cardabt">
           <div class="imageabout">
-            <img src="images/icons/about1.png" alt="" />
+            <img src="images/icons/about1.png" alt="Frameworks-icon" />
           </div>
           <h3>Frameworks</h3>
           <div class="tagsabout">
@@ -179,7 +178,7 @@
         </div>
         <div class="cardabt">
           <div class="imageabout">
-            <img src="images/icons/about2.png" alt="" />
+            <img src="images/icons/about2.png" alt="Skills-icon" />
           </div>
           <h3>Skills</h3>
           <div class="tagsabout">
@@ -205,6 +204,7 @@
         method="post"
         class="contact-form"
       >
+        <label for="name" class="disnone">Full name </label>
         <input
           class="form-element"
           id="name"
@@ -214,6 +214,7 @@
           maxlength="30"
           required
         />
+        <label for="email" class="disnone">Email address </label>
         <input
           class="form-element"
           name="email"
@@ -222,6 +223,7 @@
           placeholder="Email address"
           required
         />
+        <label for="msg" class="disnone">Enter text here</label>
         <textarea
           class="form-element msg-text"
           id="msg"
