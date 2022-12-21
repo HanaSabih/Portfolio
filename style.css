@@ -99,6 +99,9 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  body.responsive {
+    overflow: hidden;
+  }
   .topnav.responsive {
     position: relative;
     display: block;
