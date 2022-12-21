@@ -99,6 +99,10 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  body.responsive {
+    overflow: hidden;
+  }
+
   .topnav.responsive {
     position: relative;
     display: block;
@@ -159,7 +163,7 @@ a {
   flex-direction: column;
 }
 
-h1 {
+.headline h1 {
   font-size: 40px;
   line-height: 52px;
   margin-top: 64px;
@@ -167,7 +171,44 @@ h1 {
   font-weight: 700;
 }
 
-h1 span {
+.card span {
+  color: #3a4a42;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 8px 12px;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.cardabt span {
+  color: #1b5a40;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 12px;
+  background-color: #fff;
+  letter-spacing: 3;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.modal-content span {
+  padding: 4px 12px;
+  background-color: #ebecf0;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.headline h1 span {
   color: #1c5e43;
 }
 
@@ -277,6 +318,7 @@ work section
 }
 
 .card .card_container {
+  width: 100%;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -295,19 +337,6 @@ work section
   display: inline-block;
   margin-right: 8px;
   margin-top: 16px;
-}
-
-.card span {
-  color: #3a4a42;
-  font-size: 12px;
-  line-height: 16px;
-  padding: 8px 12px;
-  background-color: #ebf0ee;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
 }
 
 .card button,
@@ -343,6 +372,20 @@ work section
   letter-spacing: 3;
   width: 159px;
   height: 48px;
+}
+
+.modal-content button {
+  height: 48px;
+  gap: 13px;
+  display: flex;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #36b37e;
+  color: #fff;
+  border: 4px solid #36b37e;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
 }
 
 .card button:hover,
@@ -444,20 +487,6 @@ about me section
   margin-bottom: 12px;
 }
 
-.cardabt span {
-  color: #1b5a40;
-  font-size: 12px;
-  line-height: 16px;
-  padding: 12px;
-  background-color: #fff;
-  letter-spacing: 3;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-}
-
 /* =====================
 contact me section
 ===================== */
@@ -545,7 +574,7 @@ contact me section
     display: block;
   }
 
-  h1 {
+  .headline h1 {
     font-size: 48px;
     line-height: 60px;
     margin-top: 160px;
@@ -688,5 +717,163 @@ contact me section
 
   .btn-general {
     width: 159px;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 920px;
+}
+
+/* The Close Button */
+.closeModal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 616px;
+}
+
+.modal-content .hdrModal {
+  display: flex;
+  gap: 12px;
+  height: 82px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.modal-content h1 {
+  width: 589px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #172b4d;
+  display: inline-block;
+}
+
+.modal-content .btnModal {
+  display: contents;
+}
+
+.modal-content .btnimg {
+  height: 18px;
+  width: 18px;
+}
+
+.modal-content ul {
+  list-style-type: none;
+  display: inline-flex;
+  gap: 8px;
+  height: 48px;
+}
+
+.modal-content p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #344563;
+}
+
+.modal-content li span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #344563;
+  padding: 8px 12px;
+  background-color: #ebecf0;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.btnModalmobile {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .modal {
+    padding-top: 0;
+  }
+
+  .modal-content .btnModal {
+    display: none;
+  }
+
+  .modal-content {
+    margin: 20px 16px;
+    width: auto;
+  }
+
+  .modal-content img {
+    height: 220px;
+  }
+
+  .modal-content .btnModalmobile {
+    display: flex;
+    gap: 12px;
+    justify-content: space-around;
+    margin-top: 16px;
+  }
+
+  .modal-content h1 {
+    font-weight: 600;
+  }
+
+  .modal-content p {
+    font-weight: 600;
+  }
+
+  .modal-content button {
+    height: 48px;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    align-items: center;
+  }
+
+  .closeModal {
+    position: absolute;
+    right: 60px;
+    color: #67798e;
+    width: 12px;
+    height: 12px;
   }
 }
