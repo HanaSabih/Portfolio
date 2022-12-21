@@ -102,6 +102,7 @@ a {
   body.responsive {
     overflow: hidden;
   }
+  
   .topnav.responsive {
     position: relative;
     display: block;
