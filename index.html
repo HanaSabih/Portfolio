@@ -10,42 +10,41 @@
   </head>
 
   <body>
-    <div class="bigheader">
-      <header>
-        <a href="" class="welcome"> Welcome </a>
-        <nav>
-          <img src="./images/icons/Union.png" alt="Union" />
-          <div class="topnav" id="myTopnav">
-            <a href="#" class="active">Portfolio</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-          </div>
-        </nav>
-      </header>
-      <section title="headline" class="headline">
-        <h1 id="headline">
-          Hey there. I'm Hana<br />
-          <span>I'm a software developer</span>
-        </h1>
-        <!-- <h3>Software Developer</h3> -->
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="welcome">Welcome</a>
+        <a href="#works" id="porfolio" class="rightNav porfolio">Porfolio</a>
+        <a href="#aboutme" class="rightNav about">About</a>
+        <a href="#contactme" class="rightNav contact">Contact</a>
 
-        <p>
-          I can help you build a product , feature or website Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don't hestiate to contact me.
-        </p>
-        <div class="icons-contact">
-          <img src="./images/icons/twitter.png" alt="twitter" />
-          <img src="./images/icons/Linkedin.png" alt="Linkedin" />
-          <img src="./images/icons/medium.png" alt="medium" />
-          <img src="./images/icons/github.png" alt="github" />
-          <img src="./images/icons/angellist.png" alt="angellist" />
-        </div>
-        <button class="down"><span class="disnone">down</span></button>
-      </section>
-    </div>
+        <a href="#" class="icon">
+          <img src="./images/icons/Union.png" alt="Union" id="imgmenu" />
+        </a>
+      </div>
+    </header>
+    <section title="headline" class="headline">
+      <h1 id="headline">
+        Hey there. I'm Hana<br />
+        <span>I'm a software developer</span>
+      </h1>
 
-    <section class="works">
+      <p>
+        I can help you build a product , feature or website Look through some of
+        my work and experience! If you like what you see and have a project you
+        need coded, don't hestiate to contact me.
+      </p>
+      <div class="icons-contact">
+        <img src="./images/icons/twitter.png" alt="twitter" />
+        <img src="./images/icons/Linkedin.png" alt="Linkedin" />
+        <img src="./images/icons/medium.png" alt="medium" />
+        <img src="./images/icons/github.png" alt="github" />
+        <img src="./images/icons/angellist.png" alt="angellist" />
+      </div>
+      <button class="down"><span class="disnone">down</span></button>
+    </section>
+    <!-- </div> -->
+
+    <section class="works" id="works">
       <h2>My Recent Works</h2>
       <hr />
 
@@ -136,7 +135,7 @@
         </div>
       </div>
     </section>
-    <section class="aboutme">
+    <section class="aboutme" id="aboutme">
       <div class="about_desc">
         <h2>About me</h2>
         <p>
@@ -194,7 +193,7 @@
       </div>
     </section>
     <!-- contactme -hana & henry-->
-    <section class="contactme">
+    <section class="contactme" id="contactme">
       <h2>
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
@@ -250,5 +249,6 @@
       <span class="postal-email-id">hanasabih@gmail.com </span>
       <hr />
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
