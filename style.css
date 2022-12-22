@@ -742,6 +742,7 @@ contact me section
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
+  border-radius: 8px;
   width: 920px;
 }
 
@@ -763,6 +764,7 @@ contact me section
 
 .modal-content img {
   width: 100%;
+  border-radius: 8px;
   height: 616px;
 }
 
