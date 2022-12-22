@@ -825,6 +825,10 @@ contact me section
   display: none;
 }
 
+body.responsive {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 800px) {
   .modal {
     padding-top: 0;
@@ -861,7 +865,7 @@ contact me section
   .modal-content button {
     height: 48px;
     border-radius: 4px;
-    padding: 12px 16px;
+    padding: 12px 22px;
     font-size: 1.1rem;
     font-weight: 500;
     line-height: 24px;
