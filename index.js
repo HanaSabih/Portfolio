@@ -133,5 +133,7 @@ document.querySelectorAll(".btnModal").forEach((n) =>
         modal.innerHTML = "";
       }
     };
+    body.classList.toggle("responsive");
+
   })
 );
