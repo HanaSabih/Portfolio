@@ -3,12 +3,13 @@ const icon = document.querySelector(".icon");
 const workCards = document.querySelector(".workCards");
 const x = document.getElementById("myTopnav");
 
-// navbar
+
 icon.addEventListener("click", () => {
   x.classList.toggle("responsive");
   body.classList.toggle("responsive");
-  // document.body.style.overflow = "hidden";
 });
+
+
 document.querySelectorAll(".rightNav").forEach((n) =>
   n.addEventListener("click", () => {
     x.classList.remove("responsive");
