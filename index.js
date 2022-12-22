@@ -129,5 +129,5 @@ document.querySelectorAll('.btnModal').forEach((n) => n.addEventListener('click'
       body.classList.remove("responsive");
     }
   };
-  body.classList.toggle('responsive');
+  body.classList.add('responsive');
 }));
