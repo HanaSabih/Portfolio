@@ -1,15 +1,14 @@
-const body = document.body;
+const { body } = document;
 const icon = document.querySelector(".icon");
 const workCards = document.querySelector(".workCards");
 const x = document.getElementById("myTopnav");
 
-
+// navbar
 icon.addEventListener("click", () => {
   x.classList.toggle("responsive");
   body.classList.toggle("responsive");
+  // document.body.style.overflow = "hidden";
 });
-
-
 document.querySelectorAll(".rightNav").forEach((n) =>
   n.addEventListener("click", () => {
     x.classList.remove("responsive");
@@ -60,42 +59,39 @@ const projects = [
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   },
 ];
-
-for (let i in projects) {
-  let workListCard = document.createElement("div");
-  let workListag = document.createElement("li");
+projects.forEach((project) => {
+  // for (const i in projects) {
+  const workListCard = document.createElement("div");
   workListCard.classList.add("card");
   workListCard.innerHTML = `
 <div class="card_container">
-            <h4>${projects[i].title}</h4>
+            <h4>${project.title}</h4>
             <div class="tags">
               <ul class="listContainerModal">
-                <li><span>${projects[i].tags[0]}</span></li>
-                <li><span>${projects[i].tags[1]}</span></li>
-                <li><span>${projects[i].tags[2]}</span></li>
-                <li><span>${projects[i].tags[3]}</span></li>
+                <li><span>${project.tags[0]}</span></li>
+                <li><span>${project.tags[1]}</span></li>
+                <li><span>${project.tags[2]}</span></li>
+                <li><span>${project.tags[3]}</span></li>
               </ul>
             </div>
-            <button id=${projects[i].id} class="btnModal">See Project</button>
+            <button id=${project.id} class="btnModal">See Project</button>
           </div>
 
         `;
 
   workCards.appendChild(workListCard);
-}
+});
 
 // Get the modal
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-const btnModal = document.querySelector(".btnModal");
+const modal = document.getElementById("myModal");
 
 document.querySelectorAll(".btnModal").forEach((n) =>
   n.addEventListener("click", (e) => {
-    let idname = e.target.id;
+    const idname = e.target.id;
 
     modal.style.display = "block";
 
-    let modalDiv = document.createElement("div");
+    const modalDiv = document.createElement("div");
     modalDiv.classList.add("modal-content");
     modalDiv.innerHTML = `
   <span class="closeModal">&times;</span>
@@ -129,12 +125,12 @@ document.querySelectorAll(".btnModal").forEach((n) =>
       modal.innerHTML = "";
     };
     window.onclick = function (event) {
-      if (event.target == modal) {
+      if (event.target === modal) {
         modal.style.display = "none";
         modal.innerHTML = "";
       }
     };
     body.classList.toggle("responsive");
-
   })
 );
+
