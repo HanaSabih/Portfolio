@@ -120,11 +120,13 @@ document.querySelectorAll('.btnModal').forEach((n) => n.addEventListener('click'
   document.querySelector('.closeModal').onclick = function () {
     modal.style.display = 'none';
     modal.innerHTML = '';
+    body.classList.remove("responsive");
   };
   window.onclick = function (event) {
     if (event.target === modal) {
       modal.style.display = 'none';
       modal.innerHTML = '';
+      body.classList.remove("responsive");
     }
   };
   body.classList.toggle('responsive');
