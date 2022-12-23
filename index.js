@@ -147,6 +147,15 @@ gontactForm.addEventListener('change', (e) => {
   email.classList.remove('invalide');
   messageform.classList.remove('invalide');
   messageform.style.display = 'none';
+  // localStorage
+  const newDataForm = {
+    name: name.value,
+    email: email.value,
+    msg: msg.value,
+  };
+  dataForm.push(newDataForm);
+  localStorage.setItem('info', JSON.stringify(dataForm));
+  // console.log(dataForm);
 });
 
 gontactForm.addEventListener('submit', (e) => {
@@ -159,13 +168,12 @@ gontactForm.addEventListener('submit', (e) => {
   } else {
     messageform.style.display = 'block';
     gontactForm.submit();
-    // =========local storage=========
-    const newDataForm = {
-      name: name.value,
-      email: email.value,
-      msg: msg.value,
-    };
-    dataForm.push(newDataForm);
-    localStorage.setItem('info', JSON.stringify(dataForm));
   }
+});
+
+// display changes
+dataForm.forEach((inputInfo) => {
+  name.value = inputInfo.name;
+  email.value = inputInfo.email;
+  msg.value = inputInfo.msg;
 });
