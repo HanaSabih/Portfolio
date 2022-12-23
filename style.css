@@ -518,7 +518,6 @@ contact me section
   border-radius: 4px;
   margin-bottom: 24px;
   font-size: 15px;
-  line-height: 24px;
   text-align: left;
   padding: 15px;
 }
@@ -883,4 +882,22 @@ body.responsive {
     width: 12px;
     height: 12px;
   }
+}
+
+/* =====contact form validation===== */
+
+#emailForm.invalide {
+  border: 2px solid #36b37e;
+  background-color: #c5e9da;
+}
+
+.messageform {
+  color: #36b37f;
+  border-color: #36b37f;
+  display: none;
+}
+
+.messageform.invalide {
+  color: red;
+  border-color: red;
 }

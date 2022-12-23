@@ -202,6 +202,7 @@
         action="https://formspree.io/f/maykropo"
         method="post"
         class="contact-form"
+        id="contact-form"
       >
         <label for="name" class="disnone">Full name </label>
         <input
@@ -217,7 +218,7 @@
         <input
           class="form-element"
           name="email"
-          id="email"
+          id="emailForm"
           type="email"
           placeholder="Email address"
           required
@@ -232,7 +233,11 @@
           rows="5"
           required
         ></textarea>
-        <button class="btn-general form-button" type="submit">
+        <label for="text" class="messageform form-element"
+          >We have received your message and would like to thank you for writing
+          to us.</label
+        >
+        <button class="btn-general form-button" type="submit" id="submit-btn">
           Get in touch
         </button>
       </form>
