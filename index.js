@@ -1,68 +1,66 @@
 const { body } = document;
-const icon = document.querySelector(".icon");
-const workCards = document.querySelector(".workCards");
-const x = document.getElementById("myTopnav");
+const icon = document.querySelector('.icon');
+const workCards = document.querySelector('.workCards');
+const x = document.getElementById('myTopnav');
 
 // navbar
-icon.addEventListener("click", () => {
-  x.classList.toggle("responsive");
-  body.classList.toggle("responsive");
+icon.addEventListener('click', () => {
+  x.classList.toggle('responsive');
+  body.classList.toggle('responsive');
   // document.body.style.overflow = "hidden";
 });
-document.querySelectorAll(".rightNav").forEach((n) =>
-  n.addEventListener("click", () => {
-    x.classList.remove("responsive");
-  })
-);
+document.querySelectorAll('.rightNav').forEach((n) => n.addEventListener('click', () => {
+  x.classList.remove('responsive');
+}));
 // data
 const projects = [
   {
-    id: "0",
-    imgSouce: "./images/work/work1.png",
-    title: "Tonic",
-    tags: ["html", "Ruby on rails", "css", "js"],
+    id: '0',
+    imgSouce: './images/work/work1.png',
+    title: 'Tonic',
+    tags: ['html', 'Ruby on rails', 'css', 'js'],
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   },
   {
-    id: "1",
-    imgSouce: "./images/work/work2.png",
-    title: "Multi-Post Stories",
-    tags: ["html", "Ruby on rails", "css", "js"],
+    id: '1',
+    imgSouce: './images/work/work2.png',
+    title: 'Multi-Post Stories',
+    tags: ['html', 'Ruby on rails', 'css', 'js'],
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   },
   {
-    id: "2",
-    imgSouce: "./images/work/work3.png",
-    title: "Facebook 360",
-    tags: ["html", "Ruby on rails", "css", "js"],
+    id: '2',
+    imgSouce: './images/work/work3.png',
+    title: 'Facebook 360',
+    tags: ['html', 'Ruby on rails', 'css', 'js'],
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   },
   {
-    id: "3",
-    imgSouce: "./images/work/work4.png",
-    title: "Uber Navigation",
-    tags: ["html", "Ruby on rails", "css", "js"],
+    id: '3',
+    imgSouce: './images/work/work4.png',
+    title: 'Uber Navigation',
+    tags: ['html', 'Ruby on rails', 'css', 'js'],
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   },
   {
-    id: "4",
-    imgSouce: "./images/work/work5.png",
-    title: "Profesional Art Printing Data",
-    tags: ["html", "Ruby on rails", "css", "js"],
+    id: '4',
+    imgSouce: './images/work/work5.png',
+    title: 'Profesional Art Printing Data',
+    tags: ['html', 'Ruby on rails', 'css', 'js'],
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   },
   {
-    id: "5",
-    imgSouce: "./images/work/work6.png",
-    title: "Multi-Post Stories Gain+Glory",
-    tags: ["html", "Ruby on rails", "css", "js"],
+    id: '5',
+    imgSouce: './images/work/work6.png',
+    title: 'Multi-Post Stories Gain+Glory',
+    tags: ['html', 'Ruby on rails', 'css', 'js'],
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   },
 ];
 projects.forEach((project) => {
   // for (const i in projects) {
-  const workListCard = document.createElement("div");
-  workListCard.classList.add("card");
+  const workListCard = document.createElement('div');
+  workListCard.classList.add('card');
   workListCard.innerHTML = `
 <div class="card_container">
             <h4>${project.title}</h4>
@@ -83,17 +81,16 @@ projects.forEach((project) => {
 });
 
 // Get the modal
-const modal = document.getElementById("myModal");
+const modal = document.getElementById('myModal');
 
-document.querySelectorAll(".btnModal").forEach((n) =>
-  n.addEventListener("click", (e) => {
-    const idname = e.target.id;
+document.querySelectorAll('.btnModal').forEach((n) => n.addEventListener('click', (e) => {
+  const idname = e.target.id;
 
-    modal.style.display = "block";
+  modal.style.display = 'block';
 
-    const modalDiv = document.createElement("div");
-    modalDiv.classList.add("modal-content");
-    modalDiv.innerHTML = `
+  const modalDiv = document.createElement('div');
+  modalDiv.classList.add('modal-content');
+  modalDiv.innerHTML = `
   <span class="closeModal">&times;</span>
   <img src=${projects[idname].imgSouce} alt=${projects[idname].title}/>
   <div class="hdrModal ">
@@ -119,58 +116,56 @@ document.querySelectorAll(".btnModal").forEach((n) =>
   
 
         `;
-    modal.appendChild(modalDiv);
-    document.querySelector(".closeModal").onclick = function () {
-      modal.style.display = "none";
-      modal.innerHTML = "";
-      body.classList.remove("responsive");
-    };
-    window.onclick = function (event) {
-      if (event.target === modal) {
-        modal.style.display = "none";
-        modal.innerHTML = "";
-        body.classList.remove("responsive");
-      }
-    };
-    body.classList.add("responsive");
-  })
-);
+  modal.appendChild(modalDiv);
+  document.querySelector('.closeModal').onclick = function () {
+    modal.style.display = 'none';
+    modal.innerHTML = '';
+    body.classList.remove('responsive');
+  };
+  window.onclick = function (event) {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+      modal.innerHTML = '';
+      body.classList.remove('responsive');
+    }
+  };
+  body.classList.add('responsive');
+}));
 
 // =============validtion form=============
 
-const gontactForm = document.getElementById("contact-form");
-const messageform = document.querySelector(".messageform");
-const submitBtn = document.getElementById("submit-btn");
-const email = document.getElementById("emailForm");
-const name = document.getElementById("name");
-const msg = document.getElementById("msg");
+const gontactForm = document.getElementById('contact-form');
+const messageform = document.querySelector('.messageform');
+const email = document.getElementById('emailForm');
+const name = document.getElementById('name');
+const msg = document.getElementById('msg');
 
-let dataForm = JSON.parse(localStorage.info) || [];
+const dataForm = JSON.parse(localStorage.info) || [];
 
-gontactForm.addEventListener("change", (e) => {
+gontactForm.addEventListener('change', (e) => {
   e.preventDefault();
-  email.classList.remove("invalide");
-  messageform.classList.remove("invalide");
-  messageform.style.display = "none";
+  email.classList.remove('invalide');
+  messageform.classList.remove('invalide');
+  messageform.style.display = 'none';
 });
 
-gontactForm.addEventListener("submit", (e) => {
+gontactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   if (email.value !== email.value.toLowerCase()) {
-    email.classList.add("invalide");
-    messageform.innerHTML = "Your Email must be in lowercase Please change it";
-    messageform.style.display = "block";
-    messageform.classList.add("invalide");
+    email.classList.add('invalide');
+    messageform.innerHTML = 'Your Email must be in lowercase Please change it';
+    messageform.style.display = 'block';
+    messageform.classList.add('invalide');
   } else {
-    messageform.style.display = "block";
+    messageform.style.display = 'block';
     gontactForm.submit();
     // =========local storage=========
-    let newDataForm = {
+    const newDataForm = {
       name: name.value,
       email: email.value,
       msg: msg.value,
     };
     dataForm.push(newDataForm);
-    localStorage.setItem("info", JSON.stringify(dataForm));
+    localStorage.setItem('info', JSON.stringify(dataForm));
   }
 });
