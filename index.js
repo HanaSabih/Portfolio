@@ -170,5 +170,7 @@ gontactForm.addEventListener("submit", (e) => {
       email: email.value,
       msg: msg.value,
     };
+    dataForm.push(newDataForm);
+    localStorage.setItem("info", JSON.stringify(dataForm));
   }
 });
