@@ -137,12 +137,7 @@ document.querySelectorAll('.btnModal').forEach((n) => n.addEventListener('click'
 const email = document.getElementById('emailForm');
 const gontactForm = document.getElementById('contact-form');
 const messageform = document.querySelector('.messageform');
-gontactForm.addEventListener('change', (e) => {
-  e.preventDefault();
-  email.classList.remove('invalide');
-  messageform.classList.remove('invalide');
-  messageform.style.display = 'none';
-});
+
 gontactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   if (email.value !== email.value.toLowerCase()) {
