@@ -518,7 +518,6 @@ contact me section
   border-radius: 4px;
   margin-bottom: 24px;
   font-size: 15px;
-  line-height: 24px;
   text-align: left;
   padding: 15px;
 }
@@ -726,6 +725,7 @@ contact me section
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
+  padding-bottom: 100px;
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -741,6 +741,7 @@ contact me section
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
+  border-radius: 8px;
   width: 920px;
 }
 
@@ -762,6 +763,7 @@ contact me section
 
 .modal-content img {
   width: 100%;
+  border-radius: 8px;
   height: 616px;
 }
 
@@ -880,4 +882,22 @@ body.responsive {
     width: 12px;
     height: 12px;
   }
+}
+
+/* =====contact form validation===== */
+
+#emailForm.invalide {
+  border: 2px solid #36b37e;
+  background-color: #c5e9da;
+}
+
+.messageform {
+  color: #36b37f;
+  border-color: #36b37f;
+  display: none;
+}
+
+.messageform.invalide {
+  color: red;
+  border-color: red;
 }
