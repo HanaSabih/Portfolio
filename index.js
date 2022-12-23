@@ -132,7 +132,6 @@ document.querySelectorAll('.btnModal').forEach((n) => n.addEventListener('click'
   body.classList.add('responsive');
 }));
 
-
 // =============validtion form=============
 
 const email = document.getElementById('emailForm');
