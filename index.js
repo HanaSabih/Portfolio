@@ -134,9 +134,18 @@ document.querySelectorAll('.btnModal').forEach((n) => n.addEventListener('click'
 
 // =============validtion form=============
 
-const email = document.getElementById('emailForm');
 const gontactForm = document.getElementById('contact-form');
 const messageform = document.querySelector('.messageform');
+const email = document.getElementById('emailForm');
+const name = document.getElementById('name');
+const msg = document.getElementById('msg');
+
+gontactForm.addEventListener('change', (e) => {
+  e.preventDefault();
+  email.classList.remove('invalide');
+  messageform.classList.remove('invalide');
+  messageform.style.display = 'none';
+});
 
 gontactForm.addEventListener('change', (e) => {
   e.preventDefault();
@@ -157,3 +166,27 @@ gontactForm.addEventListener('submit', (e) => {
     gontactForm.submit();
   }
 });
+// =============local storage=============
+function formDatas() {
+  const formData = {
+    namef: name.value,
+    emailf: email.value,
+    msgf: msg.value,
+  };
+  localStorage.setItem('info', JSON.stringify(formData));
+}
+
+name.addEventListener('focusout', formDatas);
+email.addEventListener('focusout', formDatas);
+msg.addEventListener('focusout', formDatas);
+
+const obtainedData = JSON.parse(localStorage.getItem('info'));
+if (obtainedData) {
+  name.value = obtainedData.namef;
+  email.value = obtainedData.emailf;
+  msg.value = obtainedData.msgf;
+} else {
+  name.value = '';
+  email.value = '';
+  msg.value = '';
+}
