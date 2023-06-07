@@ -901,3 +901,18 @@ body.responsive {
   color: red;
   border-color: red;
 }
+
+.seeSource {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.cardabt:hover {
+  border: 2px solid #30520a;
+  background-color: rgba(54, 179, 127, 0.24);
+}
+
+.card:hover {
+  border: 2px solid #1c5e43;
+}
