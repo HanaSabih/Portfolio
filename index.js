@@ -18,45 +18,59 @@ document.querySelectorAll(".rightNav").forEach((n) =>
 const projects = [
   {
     id: "0",
-    imgSouce: "./images/work/work1.png",
-    title: "To Do list",
-    tags: ["html", "webpack", "css", "js"],
-    text: "This is a To Do list: build with a simple HTML list of To Do tasks. This simple web page will be built using webpack and served by a webpack dev server, with testing.",
+    imgSouce: "./images/work/w-1.png",
+    title: "Cryptocurrency",
+    tags: ["React", "Redux", "Testing", "Bootstrap"],
+    seeLive: "https://cryptocurrency-jdo1.onrender.com/",
+    sourceView: "https://github.com/HanaSabih/cryptocurrency",
+    text: "A Single Page Application that allows users to track the Cryptocurrency Market. Users can search for country and click on a coin to view their current data of coin stat.",
   },
   {
     id: "1",
-    imgSouce: "./images/work/work2.png",
-    title: "Multi-Post Stories",
-    tags: ["html", "Ruby on rails", "css", "js"],
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    imgSouce: "./images/work/w-2.png",
+    title: "Bookstore",
+    tags: ["React", "Redux", "API", "Bootstrap"],
+    seeLive: "https://hana-sabih-bookstore.netlify.app/",
+    sourceView: "https://github.com/HanaSabih/bookstore",
+    text: "The Bookstore is a website similar to Awesome Books website. This version simple website that displays a list of books and allows you to: Display a list of books, Add a book, Remove a selected book, and Discus about a book by making comments. The project is built using ReactJS, CSS3, and HTML5, bootstrap.",
   },
   {
     id: "2",
-    imgSouce: "./images/work/work3.png",
-    title: "Facebook 360",
-    tags: ["html", "Ruby on rails", "css", "js"],
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    imgSouce: "./images/work/w-3.png",
+    title: "Space Travelers Hub",
+    tags: ["React", "Redux", "API", "Testing"],
+    seeLive: "https://hana-sabih-space-travelers-hub.netlify.app/",
+    sourceView: "https://github.com/HanaSabih/space-travelers-hub",
+    text: "Single Page Application which displays lists of Rockets and Missions with information from the SpaceX API. It allows a user to make reservations for rockets or join missions. Said rockets and missions are then displayed in the MyProfile page.",
   },
   {
     id: "3",
-    imgSouce: "./images/work/work4.png",
-    title: "Uber Navigation",
-    tags: ["html", "Ruby on rails", "css", "js"],
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    imgSouce: "./images/work/w-4.png",
+    title: "The Meal",
+    tags: ["Js6", "API", "Testing", "webpack"],
+    seeLive: "https://hanasabih.github.io/the-meal/dist/",
+    sourceView: "https://github.com/HanaSabih/the-meal",
+    text: "the-meal is a group capstone project to dynamically build a restaurant website using Javascript, Webpack, a couple of APIs and Jest for testing.",
   },
   {
     id: "4",
-    imgSouce: "./images/work/work5.png",
-    title: "Profesional Art Printing Data",
-    tags: ["html", "Ruby on rails", "css", "js"],
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    imgSouce: "./images/work/w-5.png",
+    title: "Accountant Website",
+    tags: ["html", "Bootstrap", "css", "js"],
+    seeLive:
+      "https://hanasabih.github.io/capstone-project1-accountant-website/",
+    sourceView:
+      "https://github.com/HanaSabih/capstone-project1-accountant-website",
+    text: "the-meal is a group capstone project to dynamically build a restaurant website using Javascript, Webpack, a couple of APIs and Jest for testing.",
   },
   {
     id: "5",
-    imgSouce: "./images/work/work6.png",
-    title: "Multi-Post Stories Gain+Glory",
-    tags: ["html", "Ruby on rails", "css", "js"],
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    imgSouce: "./images/work/w-6.png",
+    title: "Awesome Books",
+    tags: ["html", "Bootstrap", "css", "js"],
+    seeLive: "https://hanasabih.github.io/awesome-books/",
+    sourceView: "https://github.com/HanaSabih/awesome-books",
+    text: "This is a Awesome books: plain JavaScript with objects project in the Microverse program to test my understanding in different ways to create objects in JavaScript, and Create and access properties and methods of JavaScript objects.",
   },
 ];
 projects.forEach((project) => {
@@ -100,8 +114,8 @@ document.querySelectorAll(".btnModal").forEach((n) =>
   <div class="hdrModal ">
   <h1  >${projects[idname].title}</h1>
   <div class="btnModal " >
-  <button>See live <img src="./images/popup/Icon.png" class="btnimg" alt="See live"/></button>
-  <button>See Source <img src="./images/popup/Vector.png" class="btnimg" alt="See Source"/></button>
+     <button>See live <img src="./images/popup/Icon.png" class="btnimg" alt="See live"/></button>
+     <button>See Source <img src="./images/popup/Vector.png" class="btnimg" alt="See Source"/></button>
   </div>
   </div>
   <div class="tags">
@@ -113,10 +127,12 @@ document.querySelectorAll(".btnModal").forEach((n) =>
     </ul>
   </div>
   <p>${projects[idname].text}</p>
-  <div class="btnModalmobile ">
-  <button>See live <img src="./images/popup/Icon.png" class="btnimg" alt="See live"/></button>
-  <button>See Source <img src="./images/popup/Vector.png" class="btnimg" alt="See Source"/></button>
+  <div class= "seeSource">
+  <a href=${projects[idname].seeLive} target="_blank" ><button>See live <img src="./images/popup/Icon.png" class="btnimg" alt="See live"/></button></button></a>
+  <a href=${projects[idname].sourceView} target="_blank" ><button>See Source <img src="./images/popup/Vector.png" class="btnimg" alt="See Source"/></button></a>
   </div>
+  
+  
   
 
         `;
